@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busticketbooking.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="515.0" prefWidth="423.0">
+         <children>
+            <AnchorPane layoutX="-12.0" prefHeight="515.0" prefWidth="379.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BUS" layoutX="127.0" layoutY="191.0" size="10EM" />
+                  <Label layoutX="70.0" layoutY="232.0" text="Hệ thống quản lí đặt vé " textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="365.0" prefHeight="515.0" prefWidth="359.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="145.0" layoutY="149.0" size="8em" />
+                  <Label layoutX="135.0" layoutY="163.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username" layoutX="64.0" layoutY="240.0" onAction="#login" prefHeight="35.0" prefWidth="230.0" promptText="UserName" styleClass="textField" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="password" layoutX="64.0" layoutY="294.0" onAction="#login" prefHeight="35.0" prefWidth="230.0" promptText="Password" styleClass="textField" stylesheets="@loginDesign.css" />
+                  <Button fx:id="login" layoutX="121.0" layoutY="361.0" mnemonicParsing="false" onAction="#login" onKeyTyped="#login" prefHeight="44.0" prefWidth="116.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Button fx:id="close" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close" stylesheets="@loginDesign.css">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="1.2em" x="2.0" y="2.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
